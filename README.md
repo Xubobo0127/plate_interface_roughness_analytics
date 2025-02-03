@@ -1,5 +1,4 @@
-# Fractal-rl-method
-
+# plate_interface_roughness_analytics
 # 1 Introduciton
 The Roughness-Length Method (Malinverno, 1990)  written using matlab to calculate 
 the roughness indicator (e.g. the maximum residual, the root-mean-square residual,
