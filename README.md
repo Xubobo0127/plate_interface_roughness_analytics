@@ -35,9 +35,7 @@ For more details please see https://github.com/gems-val22/subduction_data_analyt
     Distance is length landward from the trench (m)
     Depth is the plate interface depth below sea level (m)
 
-    e.g. [Barbados-3D.pro]                 3D plate boundary fault data 
-    Inline, Crossline, Distance, Depth
-    620,245,1.501137e,5.946952e+03 
+
 
 /example/                               Contains a case to calculate the roughness indicator
     
