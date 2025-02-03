@@ -22,8 +22,7 @@ For more details please see https://github.com/gems-val22/subduction_data_analyt
     [acquire_list.bat]                   Generate a list of data
     [MR_2d_multiprofiles.m]              Calculate the maximum residual for a 2D seismic profile.
     [RMS_2d_multiprofiles.m]             Calculate the root-mean-square residual and the fractal amplitude parameter for 2-dimensional data
-    [RLS_3Ddata.m]                       Calculate maximum residual, root-mean-square residual and fractal amplitude parameter for 3-dimensional data
-
+    
 
 /data/  Contains the data file of the plate interface fault geometries interpreted from from 2D/3D seismic profiles
 
@@ -41,33 +40,26 @@ For more details please see https://github.com/gems-val22/subduction_data_analyt
     Inline, Crossline, Distance, Depth
     620,245,1.501137e,5.946952e+03 
 
-/example/                               Contains two cases to calculate the roughness indicator
+/example/                               Contains a case to calculate the roughness indicator
     
-    /example/2d/                        Example of 2d data
-    /example/3d/                        Example of 3d data
-
+    /example/2d                         Example of 2d data
+   
 README                                  Help file
 
 LICENSE                                 License file
 
 #   4  How to use the Roughness-Length Method code
     
-    2d data    1. Use [acquire_list.bat] file to generate a list file at /data/ catalog
+               1. Use [acquire_list.bat] file to generate a list file at /data/ catalog
                2. Put the list file and code file in the same directory
                3. Set the appropriate parameters  (filename,times,t1,te,fid) and click Run
     
-    3d data    1. Put the data file and code file in the same directory
-               2. Set the appropriate parameters (filename,par,times,t1,te,fid) and click Run
+   
 
 #   5  Parameter description of the Roughness-Length Method code
 
     filename                            Importdata File name
-    
-    par                                 Select the parameters for calculation
-                                        par = 1,maximum residual; 
-                                        par = 2,root mean square residual; 
-                                        par = 3,fractal amplitude parameter;
-
+   
     dis                                 Distance 
 
     dep                                 Depth of the plate interface fault
