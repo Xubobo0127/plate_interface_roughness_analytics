@@ -16,8 +16,9 @@ For more details please see https://github.com/gems-val22/subduction_data_analyt
 
 # 3 Directory structure description
 
-/src/  Contains the source file
+/src/  Contains the source file that supports both macOS and Windows.
     
+
     [acquire_list.bat]                   Generate a list of data
     [MR_2d_multiprofiles.m]              Calculate the maximum residual for a 2D seismic profile.
     [RMS_2d_multiprofiles.m]             Calculate the root-mean-square residual and the fractal amplitude parameter for 2-dimensional data
@@ -25,7 +26,7 @@ For more details please see https://github.com/gems-val22/subduction_data_analyt
 
 /data/  Contains the data file of the plate interface fault geometries interpreted from from 2D/3D seismic profiles
 
-    e.g. [Alask]                         2D plate interface data       
+    e.g. [Alaska-C ALEUT-Line3.dat]      2D plate interface data       
     Distance  Depth
     2.17    5496.27 
     12.17   5500.63 
@@ -35,21 +36,28 @@ For more details please see https://github.com/gems-val22/subduction_data_analyt
     Distance is length landward from the trench (m)
     Depth is the plate interface depth below sea level (m)
 
-
-
-/example/                               Contains a case to calculate the roughness indicator
-    
-    /example/2d                         Example of 2d data
    
 README                                  Help file
 
 LICENSE                                 License file
 
 #   4  How to use the Roughness-Length Method code
-    
-               1. Use [acquire_list.bat] file to generate a list file at /data/ catalog
-               2. Put the list file and code file in the same directory
-               3. Set the appropriate parameters  (filename,times,t1,te,fid) and click Run
+        Choose your OS
+        
+        For Mac OS
+        1. Copy [acquire_list.sh] file to /data/ catalog
+        2. Open the terminal and enter follows to generate a [list] file
+            chmod +x list_dat_absolute.sh
+            ./list_dat_absolute.sh
+        3. Put the [list] file and code file in the same directory
+        4. Open the matlab script (e.g., [RMS_2d_multiprofiles.m])
+        5. Set the appropriate parameters (filename,times,t1,te,fid) and click Run in matlab 
+        
+        For Win OS
+        1. Copy [acquire_list.sh] file to /data/ catalog and click to generate a [list] file
+        2. Put the [list] file and code file in the same directory
+        3. Open the matlab script (e.g., [RMS_2d_multiprofiles.m])
+        4. Set the appropriate parameters  (filename,times,t1,te,fid) and click Run in matlab 
     
    
 
