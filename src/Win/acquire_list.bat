@@ -1,14 +1,15 @@
-REM Åú´¦Àí»ñÈ¡ÎÄ¼þÄ¿Â¼ºÍÎÄ¼þÃû
+REM æ‰¹å¤„ç†èŽ·å–æ–‡ä»¶ç›®å½•å’Œæ–‡ä»¶å
 @echo off
-for /f "delims=" %%i in ('dir /b/s *.*') do echo %%i >> list
+for /f "delims=" %%i in ('dir /b/s *.dat') do echo %%i >> list
 
-REM REM REM Åú´¦Àí»ñÈ¡ÎÄ¼þÃû
+REM REM REM æ‰¹å¤„ç†èŽ·å–æ–‡ä»¶å
 REM @echo off
 REM for /f "delims=" %%i in ('dir /b/a-d/oN *.*') do echo %%~ni >> list.txt
 
-REM REM REM Åú´¦Àí»ñÈ¡ÎÄ¼þÃûºÍºó×º
+REM REM REM æ‰¹å¤„ç†èŽ·å–æ–‡ä»¶åå’ŒåŽç¼€
 REM @echo off
 REM for /f "delims=" %%i in ('dir /b/a-d/oN *.*') do echo %%i >> list.txt
 
-REM REM Åú´¦Àí»ñÈ¡ÎÄ¼þÃûºÍºó×º
+REM REM æ‰¹å¤„ç†èŽ·å–æ–‡ä»¶åå’ŒåŽç¼€
+
 REM dir *.* /B > list.txt
