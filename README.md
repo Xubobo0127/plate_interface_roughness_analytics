@@ -47,8 +47,8 @@ LICENSE                                 License file
         For Mac OS
         1. Copy [acquire_list.sh] file to /data/ catalog
         2. Open the terminal and enter follows to generate a [list] file
-            chmod +x list_dat_absolute.sh
-            ./list_dat_absolute.sh
+            chmod +x acquire_list.sh
+            ./acquire_list.sh
         3. Put the [list] file and code file in the same directory
         4. Open the matlab script (e.g., [RMS_2d_multiprofiles.m])
         5. Set the appropriate parameters (filename,times,t1,te,fid) and click Run in matlab 
